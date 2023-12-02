@@ -5,28 +5,29 @@
 
         unset($_SESSION['flash']);
         
-        if(!empty($_POST['nom'])) {
+        if(!empty($_POST['email'])) {
             
             if(!empty($_POST['password'])) {
 
-                $nom = htmlspecialchars($_POST["nom"]);
+                $email = htmlspecialchars($_POST["email"]);
                 $passworduser = htmlspecialchars($_POST['password']);
                 
-                require_once 'db.php';
+                require_once '../db/db.php';
                 
-                $req=$pdo->prepare("SELECT * FROM agent WHERE nomag = ? || postnomag = ? || prenomag = ?");
-                $req->execute([$nom,$nom,$nom]);
+                $req=$pdo->prepare("SELECT * FROM users WHERE email = ?");
+                $req->execute([$email]);
                 $user=$req->fetch();
+
                 if($user) {
-                    if(password_verify($passworduser, $user->motdepasse)) {
+                    if(password_verify($passworduser, $user->password)) {
                         
                         $_SESSION['auth'] = $user;
-                        header("location: ../management/admin.php?2sts");
+                        header("location: ../management/pages/admin.php");
                         exit();
 
-                    } elseif($user->motdepasse === $passworduser) {
+                    } elseif($user->password === $passworduser) {
                         $_SESSION['auth'] = $user;
-                        header("location: ../management/admin.php?2sts");
+                        header("location: ../management/pages/admin.php");
                         exit();
                     } else {
                         $_SESSION['flash'] = "Identifiants ou mot de passe incorect";

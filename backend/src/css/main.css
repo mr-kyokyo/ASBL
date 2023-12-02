@@ -1,0 +1,170 @@
+a {
+  text-decoration: none;
+  color: #364a53;
+}
+.section {
+    position: relative;
+    width: 100%;
+}
+.section1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    margin-top: 200px;
+    padding: 20px;
+    z-index: 9; 
+}
+
+.jcontent {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.navbar {
+  background: #677b85;
+  z-index: 999 !important;
+}
+
+
+.cards {
+    padding: 10px;
+  }
+  .cards img {
+    height: 150px;
+    width: 100%;
+    background: whitesmoke;
+  }
+  .cards .content {
+    padding: 10px;
+    background: whitesmoke;
+  }
+  .cards .content h4,
+  .cards .content h6,
+  .cards .content p { padding: 0;margin:0;}
+  
+  .cards .content button {
+    padding: 5px 15px;
+  }
+  .topLabel {
+    padding: 5px 10px;
+    background: whitesmoke;
+  }
+  .bgGround {
+    background: #dbdbdb !important;
+  }
+  .topLabelS {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+  }
+  .topLabelS a {
+    color: white;
+  }
+
+.cardw2 {
+    overflow:  hidden !important;
+    padding: 5px;
+    background: white !important;
+}
+.contents {
+    padding: 5px;
+    padding-top: 0 !important;
+    background: white !important;
+  }
+.cardw2 img {
+  width: 700px;
+  height: 170px;
+}
+.nts {
+  padding: 5px !important;
+  background: white !important;
+  box-shadow: 1px 1px 10px #c9c9c9 !important;
+}
+
+.schoolHoriz {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll !important;
+}
+.schoolHoriz .contents {
+  width: 300px;
+}
+.schoolHoriz .contents img {
+  height: 260px;
+}
+
+/* show prod */
+.product {
+  background: rgb(235, 232, 232);
+  padding: 10px 0;
+}
+.bgSuccess {
+  background: #677b85 !important;
+}
+
+.product img {
+  width: 100%;
+  background: black;
+}
+.product .prodContent {
+  padding: 10px 0;
+}
+.product .prodContent h2 {
+  color: #1f1e1e;
+}
+.product .prodContent h6 {
+  text-transform: uppercase;
+  color: #303030;
+}
+.product .prodContent h4 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #265326 !important;
+}
+.prodContent .bgGround {
+  background: #262e26 !important;
+  padding: 10px 50px;
+  color: white;
+}
+.prodContent .bgGround span {
+  color: #aeebf3;
+  font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .section1 {
+        margin-top: 165px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .section1 {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .section1 {
+        margin-top: 120px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .secContent {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    } 
+    .topLabelS {
+        font-size: 13px !important;
+    } .cards {
+    padding-top: 10px;
+    }
+    .jcontent a {
+        font-size: 13px !important;
+    }
+}
