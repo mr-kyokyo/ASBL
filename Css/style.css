@@ -250,7 +250,31 @@ section{
     text-align: center;
     margin-top: 2rem;
 }
-
+.footer{
+    background: url(/img/pexels-pixabay-45842.jpg) no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;
+}
+.footer .box-container .box h3{
+    color:var(--black);
+    font-size: 1.5rem;
+    display: block;
+}
+.footer .box-container .box a{
+   color: var(--ligth-whithe);
+   font-size: 1.5rem;
+   display: block;
+}
+.footer .box-container .box a i{
+    color: var(--main-color);
+    padding-right:.5rem;
+    transition: .2s linear;
+}
 
 
 @media(max-width:1200px){
@@ -293,7 +317,6 @@ section{
 .header .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
 @media(max-width:450px){
     html{
         font-size: 50%;
