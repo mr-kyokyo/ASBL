@@ -265,16 +265,18 @@ section{
     font-size: 1.5rem;
     display: block;
 }
-.footer .box-container .box a{
+.footer .box-container .box a {
    color: var(--ligth-whithe);
    font-size: 1.5rem;
    display: block;
 }
 .footer .box-container .box a i{
     color: var(--main-color);
-    padding-right:.5rem;
+    padding-right: .5rem;
     transition: .2s linear;
 }
+
+
 
 
 @media(max-width:1200px){
