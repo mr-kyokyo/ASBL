@@ -248,7 +248,7 @@ section{
     margin-top: 2rem;
 }
 .footer{
-    background: url(/img/pexels-pixabay-45842.jpg) no-repeat;
+    background: url(/img/background-image-1273097_640.jpg) no-repeat;
     background-size: cover;
     background-position:  center;
 }
@@ -258,7 +258,7 @@ section{
     gap: 2rem;
 }
 .footer .box-container .box h3{
-    color:var(--black);
+    color:var(--main-colorck);
     font-size: 1.5rem;
     display: block;
 }
