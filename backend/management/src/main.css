@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+  color: #000000d7;
+}
+.userName {
+  color: teal;
+  font-weight:bold;
+}
+.subItems {
+  background: #e6e6F7;
+  padding-left: 10px !important;
+}
+.power-off {
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 100px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.power-off a {
+  color:brown !important;
+}
+.power-off:hover a {
+  color: red !important;
+  transition-duration:.3s;
+}
+.sidebar-sticky {
+  background: whitesmoke !important;
+  color: white;
+  margin-top: -100px !important;
+}
+.nav-l {
+  display: flex;justify-content: space-between;align-items:center;
+}
+.nav-l:hover {
+  background: #cecece;
+}
+.nav-link.item:hover {
+  font-weight: bold !important;
+  color: green !important;
+  margin-left: 7px;
+  transition-duration: .3s !important;
+}
+
+.btnReturn {
+  display:flex;
+  align-items:center;
+}
+
+.btnReturn h4 {
+  text-transform: uppercase;
+}
+
+.btnReturn div:first-child {
+  margin-right: 20px;
+  background-color: #e9e9e9;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.btnReturn div:first-child:hover, .btnReturn .add:hover {
+  background-color: #cccccc;
+}
+
+.btnReturn .add {
+  background-color: #e9e9e9;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+
+.pagination a {
+  color: black !important;
+  font-style: oblique !important;
+}
+
+/* profile */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dbe8e9;
+}
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #bdbcbc;
+  overflow: hidden;
+}
+
+.userInfos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfos li values {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bgBtn {
+  background-color: #dddcdc !important;
+}
+
+.bgBtn:hover {
+  background-color: #bdbcbc !important;
+}
+
+.mainTitle {
+  font-weight:bold;color:#2fad2f;background:#dddcdc;padding:10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:#819681;
+}
