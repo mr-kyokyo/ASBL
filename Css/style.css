@@ -130,9 +130,6 @@ section{
     padding: 1rem 0;
     animation: fade .3s linear backwards .7s;
 }
-.home .slider .content .btn{
-
-} 
 
 .swiper-button-next,
 .swiper-button-prev{
@@ -274,6 +271,16 @@ section{
     color: var(--main-color);
     padding-right: .5rem;
     transition: .2s linear;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+
+}
+.footer .home-rigth{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid var(--ligth-whithe);
 }
 
 
